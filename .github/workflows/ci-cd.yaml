@@ -25,7 +25,9 @@ jobs:
         run: npm install
 
       - name: Build the project
-        run: npm install --save-dev react-scripts | npm run build
+        run: npm install --save-dev react-scripts
+      - name: building the code
+        run:  npm run build
 
       - name: Save Artifact
         uses: actions/upload-artifact@v3
